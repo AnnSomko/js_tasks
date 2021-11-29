@@ -1,8 +1,15 @@
 /* 1. Вводиш N чисел. Програма має вивести числа більші за 5 */
 function getNum(...args) {
-  return args.filter(num => num > 5);
+  /*return args.filter(num => num > 5);*/
+  let arr = [];
+  for(let arg of args) {
+    if(arg > 5) arr.push(arg);
+  }
+  return arr;
 }
 getNum(1,3,6,8,9);
+
+
 
 /* 2. Вводиш N чисел, програма має вивести тіки парні числа. */
 function even(...args) {
