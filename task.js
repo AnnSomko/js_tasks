@@ -41,9 +41,26 @@ function fifthSum(...args) {
 }
 fifthSum(2,5,6,9);
 
-
 /* 6. Вводиш координати точок прямокутника на двовимірній площині. І координати довільних точок.
  Виводити інфу, чи ці точки  є всередині прямокутника */
-function rectangle() {
-   
+function rectangle(x1,x2,y1,y2,ax,ay) {
+   return((ax >= x1 & ax <= x2)&(ay >= y1 & ay <= y2))?true:false;
 }
+rectangle(2,7,1,5,3,3);
+
+/* 7. задається координата двох прямокутників, перевір, чи вони пересікаються */
+function rectangles(x1,x2,y1,y2,x3,x4,y3,y4) {
+ 
+  /*if(x3>x2 || x1>x4) { // right & left
+  console.log('not cross');
+} else if (y3>y2 || y1>y4) { // top & bottom
+  console.log('not cross');
+} else {
+  console.log('cross');
+}*/
+
+return (x3>x2 || x1>x4 || y3>y2 || y1>y4)?false:true;
+
+}
+rectangles(1,4,1,3,3,6,2,4); //true
+
