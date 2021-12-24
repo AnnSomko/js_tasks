@@ -1,0 +1,14 @@
+body {
+    box-sizing: border-box;
+}
+
+#canvas_plot {
+    border: 1px solid black;
+    background: #ead9ce;
+}
+
+.container__form {
+    position: absolute;
+    left: 600px;
+    top: 80px;
+}
