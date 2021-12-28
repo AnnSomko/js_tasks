@@ -80,7 +80,6 @@ function draw() {
       }
     drawRectangles();
     }
-      
 
     function drawRectangles() {    
         /*ctx.clearRect(x1,y1, oneRectWidth, oneRectHeight);*/
